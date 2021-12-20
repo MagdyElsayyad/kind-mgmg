@@ -9,10 +9,25 @@ body,html{
     font-family: 'Cairo', sans-serif;
 }
 
+body{
+    position: relative;
+ background-color: #5496FE;
+ min-height: 100vh;
+ overflow-y: auto;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ flex-wrap: wrap;
+ padding: 50px 0;
+
+}
+
 .section{
+  
+    
     width: 100%;
-    min-height: 100vh;
-    background-color: #5496FE;
+    
+   
     display: none;
     justify-content: center;
     align-content: center;
@@ -59,14 +74,15 @@ body,html{
 
 
 footer{
-    position: absolute;
-   
+    align-self: flex-end;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
     bottom: 0;
+    right: 10px;
     text-align: center;
-    width: 100%;
+   
     padding: 10px 0;
 }
 
