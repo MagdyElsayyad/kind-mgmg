@@ -32,13 +32,6 @@ let shuffle = (array) => {
   }
 
 shuffle();
-document.getElementById('m3lshBtn').addEventListener('click', () => {
-    sections.forEach(elmnt => {
-        elmnt.classList.remove('active');
-    });
-    
-    document.getElementById('m3lsh').classList.add('active');
-});
 
 
 document.getElementById('hugBtn').addEventListener('click', () => {
