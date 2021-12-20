@@ -14,7 +14,7 @@ html {
 
 body {
     position: relative;
-    background-color: #5496FE;
+    background-color: #0061fe;
     min-height: 100vh;
     overflow-y: auto;
     display: flex;
@@ -142,7 +142,7 @@ footer .portfolio {
     cursor: pointer;
     background-color: #fff;
 
-    color: #5496FE;
+    color: #0061fe;
 
 }
 
