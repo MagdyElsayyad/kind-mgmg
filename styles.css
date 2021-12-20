@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #5496FE;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.section.active{
+    display: flex;
+}
+
+.card{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #E0FC60;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0 5px 0px #E0FC60;
+    margin: 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.card:hover{
+    box-shadow:inset 0px 0 5px 0px #E0FC60;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer a{
+   
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.w-100{
+    width: 100%;
+}
+
+.t-center{
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.btn{
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn-solid{
+    background-color: #E0FC60;
+    color: #555;
+    
+}
+.btn:hover{
+  cursor: pointer;
+    background-color: #fff;
+  
+    color: #5496FE;
+   
+}
+
+.mb-4{
+    margin-bottom: 2rem;
+}
