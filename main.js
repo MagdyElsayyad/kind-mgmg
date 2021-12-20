@@ -1,7 +1,7 @@
 
 
 const sections = document.querySelectorAll('.section');
-let takenHugs = 1;
+let takenHugs = 0;
 let hugs = [
     './hugs/1.gif',
     './hugs/2.gif',
@@ -15,7 +15,7 @@ let hugs = [
     './hugs/10.gif',
 ];
 
-let shuffle = (array) => {
+let shuffle = () => {
     let currentIndex = hugs.length,  randomIndex;
   
     // While there remain elements to shuffle...
@@ -29,6 +29,9 @@ let shuffle = (array) => {
       [hugs[currentIndex], hugs[randomIndex]] = [
         hugs[randomIndex], hugs[currentIndex]];
     }
+
+    var img = new Image();
+    img.src=hugs[0]; 
   }
 
 shuffle();
@@ -61,9 +64,12 @@ let changeHug = () => {
         document.getElementById('block_hugs').style.display = 'none';
         document.getElementById('m3lsh_pic').style.display = 'inline';
         document.getElementById('hugAgain').style.display = 'none';
+        return
     }
     document.getElementById('m3lsh_pic').setAttribute('src',  hugs[takenHugs] )
     takenHugs++;
+    var img = new Image();
+    img.src=hugs[takenHugs]; 
     
 }
 
