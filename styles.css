@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body,
@@ -17,20 +18,27 @@ body {
     background-color: #0061fe;
     min-height: 100vh;
     overflow-y: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     flex-wrap: wrap;
     padding: 50px 0;
+  
 
 }
-
-.section {
-
-
+.mgmg-logo{
+    position: static;
+    display: block;
     width: 100%;
+    top: 10px;
+    right: 10px;
+   
+}
 
-
+.mgmg-logo img{
+    max-height: 100px;
+}
+.section {
+    width: 100%;
     display: none;
     justify-content: center;
     align-content: center;
@@ -106,6 +114,22 @@ footer .portfolio {
     font-size: 14px;
 }
 
+
+footer .social-ico{
+    margin-top: 10px;
+    transition:all .4s;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+    -ms-transition:all .4s;
+    -o-transition:all .4s;
+}
+footer .social-ico:hover {
+    transform: translateY(-10px), scale(1.1);
+    -webkit-transform: translateY(-10px), scale(1.1);
+    -moz-transform: translateY(-10px), scale(1.1);
+    -ms-transform: translateY(-10px), scale(1.1);
+    -o-transform: translateY(-10px), scale(1.1);
+}
 .w-100 {
     width: 100%;
 }

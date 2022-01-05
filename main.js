@@ -52,13 +52,21 @@ document.getElementById('m3lshBtn').addEventListener('click', () => {
     document.getElementById('blueVid').play();
     document.getElementById('blue').classList.add('active');
 });
+document.getElementById('syaahBtn').addEventListener('click', () => {
+    sections.forEach(elmnt => {
+        elmnt.classList.remove('active');
+    });
+    
+    document.getElementById('syaahVid').play();
+    document.getElementById('syah-div').classList.add('active');
+});
 
 
 let changeHug = () => {
     if(takenHugs === 5){
         document.getElementById('block_hugs').style.display = 'flex';
         document.getElementById('m3lsh_pic').style.display = 'none';
-        document.getElementById('hugAgain').innerText = 'آخر واحد يسطا بالله عليك';
+        document.getElementById('hugAgain').innerText = 'كمان واحد والنبي يا ريس';
     }
     if(takenHugs === 6){
         document.getElementById('block_hugs').style.display = 'none';
